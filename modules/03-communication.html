@@ -2,28 +2,28 @@
   <div class="module-content">
     <header class="module-header animate-in">
       <span class="module-number">03</span>
-      <h1 class="module-title">How Components Talk to Each Other</h1>
-      <p class="module-subtitle">Understanding the communication system that makes everything work</p>
+      <h1 class="module-title"><span lang="zh-CN">组件之间如何通信</span></h1>
+      <p class="module-subtitle"><span lang="zh-CN">理解让一切正常运转的通信系统</span></p>
     </header>
 
     <div class="module-body">
       <!-- SCREEN 1: Title & Data Flow Overview -->
       <section class="screen animate-in">
-        <h2 class="screen-heading">When You Type <code>/tdd</code>, You Start a Chain</h2>
-        <p class="lead">When you use ECC, you're starting a chain of communication between components. Let's follow what happens when you type <code>/tdd</code> to generate a test for your code.</p>
+        <h2 class="screen-heading"><span lang="zh-CN">当你输入 <code>/tdd</code> 时，你启动了一条链路</span></h2>
+        <p class="lead"><span lang="zh-CN">当你使用 ECC 时，你启动了组件之间的通信链路。让我们看看当你输入 <code>/tdd</code> 为代码生成测试时会发生什么。</span></p>
 
         <div class="flow-animation" data-steps='[
-          {"highlight":"flow-actor-1","label":"You type /tdd in Claude Code"},
-          {"highlight":"flow-actor-2","label":"Claude Code receives the command","packet":true,"from":"actor-1","to":"actor-2"},
-          {"highlight":"flow-actor-2","label":"ECC routes the request to the tdd-guide agent","packet":true,"from":"actor-2","to":"actor-3"},
-          {"highlight":"flow-actor-3","label":"tdd-guide reads your code and generates a test"},
-          {"highlight":"flow-actor-3","label":"tdd-guide passes the test back to Claude","packet":true,"from":"actor-3","to":"actor-2"},
-          {"highlight":"flow-actor-2","label":"Claude shows the test to you","packet":true,"from":"actor-2","to":"actor-1"}
+          {"highlight":"flow-actor-1","label":"<span lang=\"zh-CN\">你在 Claude Code 中输入 /tdd</span>","packet":true,"from":"actor-1","to":"actor-2"},
+          {"highlight":"flow-actor-2","label":"<span lang=\"zh-CN\">Claude Code 接收到命令</span>","packet":true,"from":"actor-1","to":"actor-2"},
+          {"highlight":"flow-actor-2","label":"<span lang=\"zh-CN\">ECC 将请求路由到 tdd-guide agent</span>","packet":true,"from":"actor-2","to":"actor-3"},
+          {"highlight":"flow-actor-3","label":"<span lang=\"zh-CN\">tdd-guide 读取你的代码并生成测试</span>"},
+          {"highlight":"flow-actor-3","label":"<span lang=\"zh-CN\">tdd-guide 将测试传回给 Claude</span>","packet":true,"from":"actor-3","to":"actor-2"},
+          {"highlight":"flow-actor-2","label":"<span lang=\"zh-CN\">Claude 向你展示测试</span>","packet":true,"from":"actor-2","to":"actor-1"}
         ]'>
           <div class="flow-actors">
             <div class="flow-actor" id="flow-actor-1">
               <div class="flow-actor-icon">👤</div>
-              <span>You</span>
+              <span><span lang="zh-CN">你</span></span>
             </div>
             <div class="flow-actor" id="flow-actor-2">
               <div class="flow-actor-icon">🤖</div>
@@ -37,11 +37,11 @@
 
           <div class="flow-packet" id="flow-packet"></div>
 
-          <div class="flow-step-label" id="flow-label">Click "Next Step" to begin</div>
+          <div class="flow-step-label" id="flow-label"><span lang="zh-CN">点击"下一步"开始</span></div>
 
           <div class="flow-controls">
-            <button class="btn flow-next-btn">Next Step</button>
-            <button class="btn flow-reset-btn">Restart</button>
+            <button class="btn flow-next-btn"><span lang="zh-CN">下一步</span></button>
+            <button class="btn flow-reset-btn"><span lang="zh-CN">重新开始</span></button>
             <span class="flow-progress"></span>
           </div>
         </div>
@@ -49,24 +49,24 @@
         <div class="callout callout-accent animate-in">
           <div class="callout-icon">💡</div>
           <div class="callout-content">
-            <strong class="callout-title">The Magic is in the System</strong>
-            <p>The magic isn't in one smart AI — it's in a <span class="term" data-definition="Orchestration is coordinating multiple specialized services to work together, like a conductor leading an orchestra or a kitchen manager coordinating chefs, prep cooks, and servers.">orchestration</span> system that routes requests to the right specialist, passes results between agents, and can even run multiple agents in parallel.</p>
+            <strong class="callout-title"><span lang="zh-CN">神奇之处在于系统</span></strong>
+            <p><span lang="zh-CN">神奇之处不在于一个聪明的 AI — 而在于一个</span><span class="term" data-definition="Orchestration is coordinating multiple specialized services to work together, like a conductor leading an orchestra or a kitchen manager coordinating chefs, prep cooks, and servers."><span lang="zh-CN">编排</span></span><span lang="zh-CN">系统，它将请求路由到正确的专家，在 agent 之间传递结果，甚至可以并行运行多个 agent。</span></p>
           </div>
         </div>
       </section>
 
       <!-- SCREEN 2: Parallel Execution -->
       <section class="screen animate-in">
-        <h2 class="screen-heading">Sometimes They All Work at Once</h2>
-        <p class="lead">Sometimes, ECC runs multiple agents at the same time — like having several specialists working in parallel. This saves time when agents don't need to wait for each other.</p>
+        <h2 class="screen-heading"><span lang="zh-CN">有时它们同时工作</span></h2>
+        <p class="lead"><span lang="zh-CN">有时，ECC 同时运行多个 agent — 就像多个专家并行工作一样。当 agent 不需要等待彼此时，这可以节省时间。</span></p>
 
         <div class="chat-window" id="chat-module3">
           <div class="chat-messages">
             <div class="chat-message" data-msg="0" data-sender="user" style="display:none">
               <div class="chat-avatar" style="background: var(--color-actor-1)">👤</div>
               <div class="chat-bubble">
-                <span class="chat-sender" style="color: var(--color-actor-1)">You</span>
-                <p>Review this code for quality AND security</p>
+                <span class="chat-sender" style="color: var(--color-actor-1)"><span lang="zh-CN">你</span></span>
+                <p><span lang="zh-CN">审查这段代码的质量和安全性</span></p>
               </div>
             </div>
 
@@ -74,7 +74,7 @@
               <div class="chat-avatar" style="background: var(--color-actor-2)">🤖</div>
               <div class="chat-bubble">
                 <span class="chat-sender" style="color: var(--color-actor-2)">Claude Code</span>
-                <p>I'll run <strong>code-reviewer</strong> AND <strong>security-reviewer</strong> in parallel — they can work independently!</p>
+                <p><span lang="zh-CN">我会</span><strong><span lang="zh-CN">并行</span></strong><span lang="zh-CN">运行 </span><strong>code-reviewer</strong><span lang="zh-CN"> 和 </span><strong>security-reviewer</strong><span lang="zh-CN"> — 它们可以独立工作！</span></p>
               </div>
             </div>
 
@@ -82,7 +82,7 @@
               <div class="chat-avatar" style="background: var(--color-actor-3)">📋</div>
               <div class="chat-bubble">
                 <span class="chat-sender" style="color: var(--color-actor-3)">code-reviewer</span>
-                <p>Checking code quality...</p>
+                <p><span lang="zh-CN">正在检查代码质量...</span></p>
               </div>
             </div>
 
@@ -90,7 +90,7 @@
               <div class="chat-avatar" style="background: var(--color-actor-4)">🔒</div>
               <div class="chat-bubble">
                 <span class="chat-sender" style="color: var(--color-actor-4)">security-reviewer</span>
-                <p>Scanning for vulnerabilities...</p>
+                <p><span lang="zh-CN">正在扫描漏洞...</span></p>
               </div>
             </div>
 
@@ -98,7 +98,7 @@
               <div class="chat-avatar" style="background: var(--color-actor-3)">📋</div>
               <div class="chat-bubble">
                 <span class="chat-sender" style="color: var(--color-actor-3)">code-reviewer</span>
-                <p>Found 3 issues: 2 HIGH, 1 LOW</p>
+                <p><span lang="zh-CN">发现 3 个问题：2 个高优先级，1 个低优先级</span></p>
               </div>
             </div>
 
@@ -106,7 +106,7 @@
               <div class="chat-avatar" style="background: var(--color-actor-4)">🔒</div>
               <div class="chat-bubble">
                 <span class="chat-sender" style="color: var(--color-actor-4)">security-reviewer</span>
-                <p>Found 1 vulnerability: CRITICAL</p>
+                <p><span lang="zh-CN">发现 1 个漏洞：严重</span></p>
               </div>
             </div>
 
@@ -114,7 +114,7 @@
               <div class="chat-avatar" style="background: var(--color-actor-2)">🤖</div>
               <div class="chat-bubble">
                 <span class="chat-sender" style="color: var(--color-actor-2)">Claude Code</span>
-                <p>Combined report: <strong>1 CRITICAL</strong> security issue, <strong>2 HIGH</strong> quality issues, <strong>1 LOW</strong></p>
+                <p><span lang="zh-CN">综合报告：</span><strong><span lang="zh-CN">1 个严重</span></strong><span lang="zh-CN">安全问题，</span><strong><span lang="zh-CN">2 个高优先级</span></strong><span lang="zh-CN">质量问题，</span><strong><span lang="zh-CN">1 个低优先级</span></strong></p>
               </div>
             </div>
           </div>
@@ -129,28 +129,28 @@
           </div>
 
           <div class="chat-controls">
-            <button class="btn chat-next-btn">Next Message</button>
-            <button class="btn chat-all-btn">Play All</button>
-            <button class="btn chat-reset-btn">Replay</button>
+            <button class="btn chat-next-btn"><span lang="zh-CN">下一条消息</span></button>
+            <button class="btn chat-all-btn"><span lang="zh-CN">播放全部</span></button>
+            <button class="btn chat-reset-btn"><span lang="zh-CN">重播</span></button>
             <span class="chat-progress"></span>
           </div>
         </div>
 
         <p class="text-center" style="text-align: center; margin-top: var(--space-8); color: var(--color-text-secondary); font-size: var(--text-sm);">
-          This is <span class="term" data-definition="Parallel execution means running multiple tasks at the same time instead of one after another — like having multiple checkout lanes open at a grocery store instead of one long line.">parallel execution</span> in action!
+          <span lang="zh-CN">这就是</span><span class="term" data-definition="Parallel execution means running multiple tasks at the same time instead of one after another — like having multiple checkout lanes open at a grocery store instead of one long line."><span lang="zh-CN">并行执行</span></span><span lang="zh-CN">的实际应用！</span>
         </p>
       </section>
 
       <!-- SCREEN 3: Hook Automations -->
       <section class="screen animate-in">
-        <h2 class="screen-heading">Hooks: The Autopilot for Routine Tasks</h2>
-        <p class="lead">Hooks are automations that run in the background — before or after specific events. They handle routine tasks automatically so you don't have to remember to trigger them.</p>
+        <h2 class="screen-heading"><span lang="zh-CN">钩子：常规任务的自动驾驶</span></h2>
+        <p class="lead"><span lang="zh-CN">钩子是在后台运行的自动化 — 在特定事件之前或之后。它们自动处理常规任务，所以你不需要记得手动触发它们。</span></p>
 
         <div class="layer-demo">
           <div class="layer-tabs">
-            <button class="layer-tab active" onclick="showLayer('session-start')">1. Session Start</button>
-            <button class="layer-tab" onclick="showLayer('before-tool')">2. Before Tool Use</button>
-            <button class="layer-tab" onclick="showLayer('session-end')">3. Session End</button>
+            <button class="layer-tab active" onclick="showLayer('session-start')"><span lang="zh-CN">1. 会话开始</span></button>
+            <button class="layer-tab" onclick="showLayer('before-tool')"><span lang="zh-CN">2. 工具使用前</span></button>
+            <button class="layer-tab" onclick="showLayer('session-end')"><span lang="zh-CN">3. 会话结束</span></button>
           </div>
 
           <div class="layer-viewport">
@@ -158,17 +158,17 @@
               <div class="hook-visualization">
                 <div class="hook-event">
                   <div class="hook-icon">🚀</div>
-                  <strong>Session Starts</strong>
+                  <strong><span lang="zh-CN">会话开始</span></strong>
                 </div>
                 <div class="hook-arrow">↓</div>
                 <div class="hook-action">
-                  <code>load-context.js</code> runs
+                  <code>load-context.js</code><span lang="zh-CN"> 运行</span>
                 </div>
                 <div class="hook-arrow">↓</div>
                 <div class="hook-result">
-                  <div class="hook-result-item">✓ Previous conversation loaded</div>
-                  <div class="hook-result-item">✓ Working directory restored</div>
-                  <div class="hook-result-item">✓ Memory files read</div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 上一次对话已加载</span></div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 工作目录已恢复</span></div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 记忆文件已读取</span></div>
                 </div>
               </div>
             </div>
@@ -177,17 +177,17 @@
               <div class="hook-visualization">
                 <div class="hook-event">
                   <div class="hook-icon">🔧</div>
-                  <strong>Tool About to Run</strong>
+                  <strong><span lang="zh-CN">工具即将运行</span></strong>
                 </div>
                 <div class="hook-arrow">↓</div>
                 <div class="hook-action">
-                  Hook validates inputs and checks security
+                  <span lang="zh-CN">钩子验证输入并检查安全性</span>
                 </div>
                 <div class="hook-arrow">↓</div>
                 <div class="hook-result">
-                  <div class="hook-result-item">✓ Parameters validated</div>
-                  <div class="hook-result-item">✓ Security check passed</div>
-                  <div class="hook-result-item">✓ Tool execution approved</div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 参数已验证</span></div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 安全检查通过</span></div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 工具执行已批准</span></div>
                 </div>
               </div>
             </div>
@@ -196,43 +196,43 @@
               <div class="hook-visualization">
                 <div class="hook-event">
                   <div class="hook-icon">💾</div>
-                  <strong>Session Ends</strong>
+                  <strong><span lang="zh-CN">会话结束</span></strong>
                 </div>
                 <div class="hook-arrow">↓</div>
                 <div class="hook-action">
-                  Cleanup and extraction scripts run
+                  <span lang="zh-CN">清理和提取脚本运行</span>
                 </div>
                 <div class="hook-arrow">↓</div>
                 <div class="hook-result">
-                  <div class="hook-result-item">✓ Context saved for next time</div>
-                  <div class="hook-result-item">✓ Patterns extracted</div>
-                  <div class="hook-result-item">✓ Memory updated</div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 上下文已保存，供下次使用</span></div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 模式已提取</span></div>
+                  <div class="hook-result-item">✓<span lang="zh-CN"> 记忆已更新</span></div>
                 </div>
               </div>
             </div>
           </div>
 
           <p class="layer-description" id="layer-desc">
-            <strong>Layer 1: Session Start</strong> — When a new session begins, hooks automatically load your previous <span class="term" data-definition="Context is the background information an AI needs to understand your situation — like when a doctor needs your medical history before treating you.">context</span>, restore memory, and set up the working directory. It's like walking into your office and having everything exactly where you left it.
+            <strong><span lang="zh-CN">第 1 层：会话开始</span></strong> <span lang="zh-CN">— 当新会话开始时，钩子会自动加载你之前的</span><span class="term" data-definition="Context is the background information an AI needs to understand your situation — like when a doctor needs your medical history before treating you."><span lang="zh-CN">上下文</span></span><span lang="zh-CN">，恢复记忆，并设置工作目录。就像走进办公室，一切都恰好保持在你离开时的样子。</span>
           </p>
         </div>
 
         <div class="callout callout-accent animate-in">
           <div class="callout-icon">✨</div>
           <div class="callout-content">
-            <strong class="callout-title">Autopilot for Routine Tasks</strong>
-            <p>Hooks run automatically — you don't have to remember to trigger them. It's like having an autopilot for routine tasks. Just like a smart home that turns on lights when you enter a room, hooks handle the setup and cleanup so you can focus on the actual work.</p>
+            <strong class="callout-title"><span lang="zh-CN">常规任务的自动驾驶</span></strong>
+            <p><span lang="zh-CN">钩子自动运行 — 你不需要记得触发它们。就像为常规任务配备了自动驾驶。就像智能家居在你进入房间时自动开灯，钩子处理设置和清理，让你专注于实际工作。</span></p>
           </div>
         </div>
       </section>
 
       <!-- SCREEN 4: Spot the Bug Quiz -->
       <section class="screen animate-in">
-        <h2 class="screen-heading">Spot the Bug: When Sequential Goes Wrong</h2>
-        <p class="lead">You type <code>/plan</code> for a complex feature. What happens behind the scenes? Look at this code and find the problem.</p>
+        <h2 class="screen-heading"><span lang="zh-CN">找 bug：顺序执行出错时</span></h2>
+        <p class="lead"><span lang="zh-CN">你为一个复杂功能输入 <code>/plan</code>。幕后发生了什么？看看这段代码，找出问题。</span></p>
 
         <div class="bug-challenge">
-          <h3>What's wrong with this approach?</h3>
+          <h3><span lang="zh-CN">这种方法有什么问题？</span></h3>
           <div class="bug-code">
             <div class="bug-line" data-line="1" onclick="checkBugLine(this, false)">
               <span class="line-num">1</span>
@@ -244,7 +244,7 @@
             </div>
             <div class="bug-line bug-target" data-line="3" onclick="checkBugLine(this, true)">
               <span class="line-num">3</span>
-              <code>  <span class="code-keyword">await</span> <span class="code-function">runAgent</span>(agent);  <span class="code-comment">// Waits for each to finish</span></code>
+              <code>  <span class="code-keyword">await</span> <span class="code-function">runAgent</span>(agent);  <span class="code-comment">// <span lang="zh-CN">等待每个完成</span></span></code>
             </div>
             <div class="bug-line" data-line="4" onclick="checkBugLine(this, false)">
               <span class="line-num">4</span>
@@ -255,29 +255,29 @@
         </div>
 
         <div class="bug-solution" id="bug-solution" style="display:none">
-          <h4>Why This Matters</h4>
-          <p>The planner needs to run FIRST to create a plan. But once the plan exists, architect and tdd-guide can work from it <strong>at the same time</strong> — they don't need to wait for each other!</p>
+          <h4><span lang="zh-CN">为什么这很重要</span></h4>
+          <p><span lang="zh-CN">planner 需要先运行以创建计划。但一旦计划存在，architect 和 tdd-guide 可以</span><strong><span lang="zh-CN">同时</span></strong><span lang="zh-CN">基于它工作 — 它们不需要等待彼此！</span></p>
 
-          <p style="margin-top: var(--space-4);"><strong>Here's the better approach:</strong></p>
+          <p style="margin-top: var(--space-4);"><strong><span lang="zh-CN">这里是更好的方法：</span></strong></p>
 
           <div class="translation-block">
             <div class="translation-code">
               <span class="translation-label">CODE</span>
-              <pre><code><span class="code-comment">// Run planner first to create the plan</span>
+              <pre><code><span class="code-comment">// <span lang="zh-CN">先运行 planner 以创建计划</span></span>
 <span class="code-keyword">const</span> result = <span class="code-keyword">await</span> <span class="code-function">runAgent</span>(<span class="code-string">'planner'</span>);
 
-<span class="code-comment">// Then run architect and tdd-guide in parallel</span>
+<span class="code-comment">// <span lang="zh-CN">然后并行运行 architect 和 tdd-guide</span></span>
 <span class="code-keyword">await</span> Promise.<span class="code-function">all</span>([
   <span class="code-function">runAgent</span>(<span class="code-string">'architect'</span>, result),
   <span class="code-function">runAgent</span>(<span class="code-string">'tdd-guide'</span>, result)
 ]);</code></pre>
             </div>
             <div class="translation-english">
-              <span class="translation-label">PLAIN ENGLISH</span>
+              <span class="translation-label"><span lang="zh-CN">通俗解释</span></span>
               <div class="translation-lines">
-                <p class="tl">Wait for the planner to finish and save its result...</p>
-                <p class="tl">Then launch both architect and tdd-guide at the same time...</p>
-                <p class="tl">Both get the same plan, and we wait for both to complete...</p>
+                <p class="tl"><span lang="zh-CN">等待 planner 完成并保存其结果...</span></p>
+                <p class="tl"><span lang="zh-CN">然后同时启动 architect 和 tdd-guide...</span></p>
+                <p class="tl"><span lang="zh-CN">两者都获得相同的计划，我们等待两者完成...</span></p>
               </div>
             </div>
           </div>
@@ -285,14 +285,14 @@
           <div class="callout callout-info">
             <div class="callout-icon">⚡</div>
             <div class="callout-content">
-              <strong class="callout-title">Speed Win!</strong>
-              <p>Running architect and tdd-guide in parallel cuts the total time almost in half! Instead of waiting for one then the other, they work simultaneously — like having two chefs preparing different parts of a meal at the same time.</p>
+              <strong class="callout-title"><span lang="zh-CN">速度提升！</span></strong>
+              <p><span lang="zh-CN">并行运行 architect 和 tdd-guide 将总时间几乎减少了一半！不用等待一个再等待另一个，它们同时工作 — 就像两个厨师同时准备一顿饭的不同部分。</span></p>
             </div>
           </div>
         </div>
 
         <div class="module-transition" style="margin-top: var(--space-16)">
-          <p class="lead"><strong>What's Next:</strong> Now you know how ECC's internal components talk to each other. But ECC also connects to the outside world — external services via <span class="term" data-definition="MCP (Model Context Protocol) is a standard that lets AI assistants connect to external tools and data sources — like a universal adapter that lets any AI plug into any service.">MCP</span>, and multiple AI coding tools. Let's see how that works.</p>
+          <p class="lead"><strong><span lang="zh-CN">下一步：</span></strong><span lang="zh-CN"> 现在你了解了 ECC 的内部组件如何相互通信。但 ECC 也连接到外部世界 — 通过</span><span class="term" data-definition="MCP (Model Context Protocol) is a standard that lets AI assistants connect to external tools and data sources — like a universal adapter that lets any AI plug into any service.">MCP</span><span lang="zh-CN"> 连接外部服务，以及多种 AI 编码工具。让我们看看那是如何工作的。</span></p>
         </div>
       </section>
     </div>
