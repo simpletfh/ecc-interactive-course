@@ -1,0 +1,314 @@
+<section class="module" id="module-5" style="background: var(--color-bg-warm)">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">05</span>
+      <h1 class="module-title">Speed & Reliability: Clever Optimization Tricks</h1>
+      <p class="module-subtitle">How ECC saves time, reduces costs, and prevents mistakes with smart optimizations</p>
+    </header>
+
+    <div class="module-body">
+      <!-- Screen 1: Title & Optimization Overview -->
+      <section class="screen animate-in">
+        <div class="screen-intro">
+          <p class="text-lg">You know how sometimes you have to repeat yourself to AI tools? "Remember we talked about this?" "What did I say last time?" ECC fixes that by remembering context across sessions.</p>
+        </div>
+
+        <div class="pattern-cards">
+          <div class="pattern-card" style="border-top: 3px solid var(--color-actor-1)">
+            <div class="pattern-icon" style="background: var(--color-actor-1)">💰</div>
+            <h4 class="pattern-title">Token Optimization</h4>
+            <p class="pattern-desc">Use fewer <span class="term" data-definition="Tokens are chunks of text that AI models process. You pay per token, so using fewer tokens saves money.">tokens</span>, save money. ECC chooses the right model for each task and keeps prompts lean.</p>
+          </div>
+          <div class="pattern-card" style="border-top: 3px solid var(--color-actor-2)">
+            <div class="pattern-icon" style="background: var(--color-actor-2)">🧠</div>
+            <h4 class="pattern-title">Memory Persistence</h4>
+            <p class="pattern-desc">Remember across sessions. Your preferences, past decisions, and project context stick around automatically.</p>
+          </div>
+          <div class="pattern-card" style="border-top: 3px solid var(--color-actor-3)">
+            <div class="pattern-icon" style="background: var(--color-actor-3)">⚙️</div>
+            <h4 class="pattern-title">Automation</h4>
+            <p class="pattern-desc">Auto-run routine tasks. Tests, reviews, and pattern extraction happen while you focus on building.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 2: Token Optimization -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">Tokens = Money. Spend Wisely.</h2>
+        <p>Every word you send to an AI costs money. ECC optimizes at every step to give you the same quality for 30-50% less.</p>
+
+        <div class="step-cards">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <strong>Model Selection</strong>
+              <p>Use cheaper <span class="term" data-definition="An AI model is the brain behind the AI. Different models have different capabilities and costs.">models</span> for simple tasks — haiku for edits, sonnet for planning.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <strong>System Prompt Slimming</strong>
+              <p>Remove unused instructions and compress AGENTS.md to only what's relevant for the current task.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <strong>Background Processes</strong>
+              <p>Offload long tasks to <span class="term" data-definition="Subagents are helper AI agents that work independently on specific tasks, keeping the main conversation focused and fast.">subagents</span>. The main context stays small and responsive.</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <strong>Iterative Retrieval</strong>
+              <p>Load only relevant docs, not the whole codebase. Why pay to read files you don't need?</p>
+            </div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">5</div>
+            <div class="step-body">
+              <strong>Parallel Execution</strong>
+              <p>Run agents simultaneously instead of sequentially. Get results in half the time.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-accent">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <strong class="callout-title">The Aha! Moment</strong>
+            <p>These optimizations can reduce token usage by 30-50% — with no loss in quality! That's real money saved on big projects.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 3: Memory Persistence -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">ECC Never Forgets Your Preferences</h2>
+        <p>You tell ECC something once, and it remembers — across sessions, across days, across projects.</p>
+
+        <div class="chat-window" id="chat-memory">
+          <div class="chat-messages">
+            <div class="chat-message" data-msg="0" data-sender="user" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-1)">U</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-1)">You</span>
+                <p>I always use pnpm, never npm. Remember that.</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="1" data-sender="ecc" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-2)">E</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-2)">ECC</span>
+                <p>Got it! Saving to memory...</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="2" data-sender="user" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-1)">U</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-1)">You</span>
+                <p>Install the dependencies.</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="3" data-sender="ecc" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-2)">E</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-2)">ECC</span>
+                <p>Using pnpm (saved from your preference)...</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="4" data-sender="user" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-1)">U</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-1)">You</span>
+                <p>You remembered!</p>
+              </div>
+            </div>
+            <div class="chat-message" data-msg="5" data-sender="ecc" style="display:none">
+              <div class="chat-avatar" style="background: var(--color-actor-2)">E</div>
+              <div class="chat-bubble">
+                <span class="chat-sender" style="color: var(--color-actor-2)">ECC</span>
+                <p>Of course! I never forget your preferences.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-typing" id="chat-memory-typing" style="display:none">
+            <div class="chat-avatar" id="chat-memory-typing-avatar">?</div>
+            <div class="chat-typing-dots">
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+            </div>
+          </div>
+
+          <div class="chat-controls">
+            <button class="btn chat-next-btn">Next Message</button>
+            <button class="btn chat-all-btn">Play All</button>
+            <button class="btn chat-reset-btn">Replay</button>
+            <span class="chat-progress"></span>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">🔌</div>
+          <div class="callout-content">
+            <strong class="callout-title">How It Works</strong>
+            <p><span class="term" data-definition="Hooks are scripts that run automatically at specific times — like when a session starts or ends. They're like alarms that trigger actions.">Hooks</span> save your preferences to memory files when sessions end. When you return, ECC loads them automatically. No manual saving needed.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 4: Automated Testing -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">Testing That Runs Itself</h2>
+        <p>ECC makes testing easy with automated workflows. You write code, agents handle the rest.</p>
+
+        <div class="flow-animation" data-steps='[
+          {"highlight":"flow-actor-1","label":"You type /tdd"},
+          {"highlight":"flow-actor-2","label":"tdd-guide agent writes a failing test","packet":true,"from":"actor-1","to":"actor-2"},
+          {"highlight":"flow-actor-3","label":"You implement the feature","packet":true,"from":"actor-2","to":"actor-3"},
+          {"highlight":"flow-actor-4","label":"tdd-guide agent checks: does the test pass?","packet":true,"from":"actor-3","to":"actor-4"},
+          {"highlight":"flow-actor-5","label":"code-reviewer agent checks quality","packet":true,"from":"actor-4","to":"actor-5"},
+          {"highlight":"flow-actor-6","label":"security-reviewer agent scans for vulnerabilities","packet":true,"from":"actor-5","to":"actor-6"},
+          {"highlight":"flow-actor-6","label":"✅ All checks passed!"}
+        ]'>
+          <div class="flow-actors">
+            <div class="flow-actor" id="flow-actor-1">
+              <div class="flow-actor-icon">👤</div>
+              <span>You</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-2">
+              <div class="flow-actor-icon">📝</div>
+              <span>tdd-guide</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-3">
+              <div class="flow-actor-icon">💻</div>
+              <span>Your Code</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-4">
+              <div class="flow-actor-icon">✓</div>
+              <span>Test Check</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-5">
+              <div class="flow-actor-icon">👁️</div>
+              <span>code-reviewer</span>
+            </div>
+            <div class="flow-actor" id="flow-actor-6">
+              <div class="flow-actor-icon">🔒</div>
+              <span>security-reviewer</span>
+            </div>
+          </div>
+
+          <div class="flow-packet" id="flow-packet"></div>
+
+          <div class="flow-step-label" id="flow-label">Click "Next Step" to begin</div>
+
+          <div class="flow-controls">
+            <button class="btn flow-next-btn">Next Step</button>
+            <button class="btn flow-reset-btn">Restart</button>
+            <span class="flow-progress"></span>
+          </div>
+        </div>
+
+        <div class="callout callout-accent">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <strong class="callout-title">The Aha! Moment</strong>
+            <p>ECC requires <span class="term" data-definition="Test coverage measures how much of your code is tested. 80% coverage means 80% of your code runs automatically during tests.">80%+ test coverage</span> — and the agents remind you if you forget. No more "I'll add tests later."</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 5: Continuous Learning -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">ECC Learns From You</h2>
+        <p>Every session teaches ECC something new. Successful patterns get extracted and saved for reuse.</p>
+
+        <div class="translation-block animate-in">
+          <div class="translation-code">
+            <span class="translation-label">CODE</span>
+            <pre><code><span class="code-line"><span class="code-comment">// From hooks/session-end.json</span></span>
+<span class="code-line">{</span>
+<span class="code-line">  <span class="code-property">"matcher"</span>: { <span class="code-property">"phase"</span>: <span class="code-string">"session_end"</span> },</span>
+<span class="code-line">  <span class="code-property">"hooks"</span>: [</span>
+<span class="code-line">    {</span>
+<span class="code-line">      <span class="code-property">"type"</span>: <span class="code-string">"notification"</span>,</span>
+<span class="code-line">      <span class="code-property">"command"</span>: <span class="code-string">"node scripts/extract-patterns.js"</span></span>
+<span class="code-line">    }</span>
+<span class="code-line">  ]</span>
+<span class="code-line">}</span></code></pre>
+          </div>
+          <div class="translation-english">
+            <span class="translation-label">PLAIN ENGLISH</span>
+            <div class="translation-lines">
+              <p class="tl">This hook runs when your session ends...</p>
+              <p class="tl">It calls extract-patterns.js to analyze what you did...</p>
+              <p class="tl">The script looks for successful patterns and saves them to the skills/ folder...</p>
+              <p class="tl">Next time you face a similar problem, ECC uses the extracted pattern automatically!</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <div class="callout-icon">🎓</div>
+          <div class="callout-content">
+            <strong class="callout-title">Knowledge That Compounds</strong>
+            <p>The more you use ECC, the smarter it gets. Your solutions become reusable skills that speed up future projects.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screen 6: Quiz -->
+      <section class="screen animate-in">
+        <h2 class="screen-heading">Ready to Optimize?</h2>
+        <p>Let's see how you'd apply these clever tricks in a real scenario.</p>
+
+        <div class="quiz-container" id="quiz-module5">
+          <div class="scenario-block">
+            <div class="scenario-context">
+              <span class="scenario-label">Scenario</span>
+              <p>You're working on a large refactoring. You want to save tokens and time while making sure nothing breaks. What's the best approach?</p>
+            </div>
+
+            <div class="quiz-question-block"
+                 data-correct="option-b"
+                 data-explanation-right="Exactly! Planning first avoids wasted work. Parallel execution saves time. You get quality AND speed — the best of both worlds."
+                 data-explanation-wrong="Not quite. Think about how planning ahead can save tokens, and how running agents in parallel saves time.">
+              <h3 class="quiz-question">What's the best approach?</h3>
+              <div class="quiz-options">
+                <button class="quiz-option" data-value="option-a" onclick="selectOption(this)">
+                  <div class="quiz-option-radio"></div>
+                  <span>Let Claude Code handle everything — it knows best</span>
+                </button>
+                <button class="quiz-option" data-value="option-b" onclick="selectOption(this)">
+                  <div class="quiz-option-radio"></div>
+                  <span>Use ECC's planner agent first, then run code-reviewer and security-reviewer in parallel</span>
+                </button>
+                <button class="quiz-option" data-value="option-c" onclick="selectOption(this)">
+                  <div class="quiz-option-radio"></div>
+                  <span>Run every agent sequentially to make sure nothing is missed</span>
+                </button>
+                <button class="quiz-option" data-value="option-d" onclick="selectOption(this)">
+                  <div class="quiz-option-radio"></div>
+                  <span>Disable all agents to save tokens</span>
+                </button>
+              </div>
+              <div class="quiz-feedback"></div>
+            </div>
+          </div>
+
+          <button class="quiz-check-btn" onclick="checkQuiz('quiz-module5')">Check Answer</button>
+          <button class="quiz-reset-btn" onclick="resetQuiz('quiz-module5')">Try Again</button>
+        </div>
+
+        <div class="module-end-cta animate-in">
+          <p class="text-lg"><strong>You've completed the course!</strong></p>
+          <p>You've now seen everything that makes ECC work — from the agents and skills, to how they communicate, to external integrations, to performance optimizations. The last step is yours: go use ECC to build something amazing!</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</section>

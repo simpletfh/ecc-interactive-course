@@ -1,0 +1,277 @@
+<section class="module" id="module-4">
+  <div class="module-content">
+    <header class="module-header animate-in">
+      <span class="module-number">04</span>
+      <h1 class="module-title">The Outside World</h1>
+      <p class="module-subtitle">How ECC connects to different AI tools and external services</p>
+    </header>
+
+    <!-- Screen 1: Title & Cross-Platform Overview -->
+    <section class="screen animate-in">
+      <h2 class="screen-heading">Works Everywhere: Cross-Platform Support</h2>
+
+      <p class="text-lg">
+        ECC isn't trapped in one app. It works across
+        <span class="term" data-definition="Claude Code is Anthropic's AI coding assistant — an AI that helps you write, debug, and understand code in your editor.">Claude Code</span>,
+        <span class="term" data-definition="Cursor is an AI-powered code editor that integrates AI assistance directly into your coding workflow.">Cursor</span>, and
+        <span class="term" data-definition="Codex is OpenAI's code-generation model that can write and understand programming code.">Codex</span> —
+        and it can reach outside your codebase to databases, APIs, and more.
+      </p>
+
+      <div class="callout callout-accent animate-in">
+        <div class="callout-icon">🔌</div>
+        <div class="callout-content">
+          <strong class="callout-title">Think of ECC as a universal power adapter</strong>
+          <p>Just as a power adapter lets you plug your device into different outlets around the world, ECC lets your AI agents plug into different tools and services. One agent, many destinations.</p>
+        </div>
+      </div>
+
+      <div class="file-tree animate-in">
+        <div class="ft-folder open">
+          <span class="ft-name">ecc-universal/</span>
+          <span class="ft-desc">Platform support configurations</span>
+          <div class="ft-children">
+            <div class="ft-file">
+              <span class="ft-name">opencode.json</span>
+              <span class="ft-desc">Claude Code configuration</span>
+            </div>
+            <div class="ft-file">
+              <span class="ft-name">cursor.json</span>
+              <span class="ft-desc">Cursor integration settings</span>
+            </div>
+            <div class="ft-file">
+              <span class="ft-name">codex-cli.json</span>
+              <span class="ft-desc">Codex CLI support</span>
+            </div>
+            <div class="ft-file">
+              <span class="ft-name">codex-app.json</span>
+              <span class="ft-desc">Codex app configuration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="platform-grid animate-in">
+        <div class="platform-card">
+          <div class="platform-icon">🤖</div>
+          <h4>Claude Code</h4>
+          <p class="text-sm text-secondary">Anthropic</p>
+          <span class="badge badge-success">Full Support</span>
+        </div>
+        <div class="platform-card">
+          <div class="platform-icon">⚡</div>
+          <h4>Cursor</h4>
+          <p class="text-sm text-secondary">Cursor Inc</p>
+          <span class="badge badge-success">Full Support</span>
+        </div>
+        <div class="platform-card">
+          <div class="platform-icon">🧠</div>
+          <h4>Codex</h4>
+          <p class="text-sm text-secondary">OpenAI</p>
+          <span class="badge badge-info">CLI + App</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 2: MCP Integrations -->
+    <section class="screen animate-in">
+      <h2 class="screen-heading">Connecting to External Services</h2>
+
+      <p class="text-lg">
+        <span class="term" data-definition="MCP (Model Context Protocol) is a standard that lets AI agents talk to external services like databases, APIs, and file systems. It's like a universal language for AI connections.">MCP</span>
+        lets ECC talk to the outside world — databases, APIs, GitHub, and more.
+      </p>
+
+      <div class="flow-steps animate-in">
+        <div class="flow-step">
+          <div class="flow-step-icon">🧠</div>
+          <div>
+            <strong>ECC Core</strong>
+            <p class="text-sm text-secondary">Your AI agent</p>
+          </div>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">
+          <div class="flow-step-icon">🔌</div>
+          <div>
+            <strong>MCP Client</strong>
+            <p class="text-sm text-secondary">Universal connector</p>
+          </div>
+        </div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-step">
+          <div class="flow-step-icon">🌐</div>
+          <div>
+            <strong>External Services</strong>
+            <p class="text-sm text-secondary">Databases, APIs, GitHub</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="margin-top: var(--space-10); margin-bottom: var(--space-4);">Popular MCP Integrations</h3>
+
+      <div class="badge-list animate-in">
+        <div class="badge-item">
+          <div class="badge-icon">🗄️</div>
+          <div>
+            <code class="badge-code">PostgreSQL MCP</code>
+            <p class="badge-desc">Query databases, inspect schemas, analyze table structures — like having a database expert on call.</p>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon">📁</div>
+          <div>
+            <code class="badge-code">Filesystem MCP</code>
+            <p class="badge-desc">Read and write files anywhere on your system — perfect for organizing project files or generating documentation.</p>
+          </div>
+        </div>
+        <div class="badge-item">
+          <div class="badge-icon">🐙</div>
+          <div>
+            <code class="badge-code">GitHub MCP</code>
+            <p class="badge-desc">Fetch issues, create pull requests, scan code — manage your GitHub repositories through conversation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 3: Package Manager Detection -->
+    <section class="screen animate-in">
+      <h2 class="screen-heading">Smart Package Manager Detection</h2>
+
+      <p class="text-lg">
+        ECC automatically detects which
+        <span class="term" data-definition="A package manager is a tool that handles your project's dependencies — the libraries and frameworks your code needs to work. Examples: npm, pnpm, yarn, bun.">package manager</span>
+        you're using — npm, pnpm, yarn, or bun. No manual configuration needed.
+      </p>
+
+      <div class="translation-block animate-in">
+        <div class="translation-code">
+          <span class="translation-label">CODE</span>
+          <pre><code><span class="code-keyword">export function</span> <span class="code-function">detectPackageManager</span>(<span class="code-property">cwd</span>) {
+  <span class="code-keyword">const</span> lockFiles = [
+    { <span class="code-property">file</span>: <span class="code-string">'pnpm-lock.yaml'</span>, <span class="code-property">manager</span>: <span class="code-string">'pnpm'</span> },
+    { <span class="code-property">file</span>: <span class="code-string">'yarn.lock'</span>, <span class="code-property">manager</span>: <span class="code-string">'yarn'</span> },
+    { <span class="code-property">file</span>: <span class="code-string">'package-lock.json'</span>, <span class="code-property">manager</span>: <span class="code-string">'npm'</span> },
+    { <span class="code-property">file</span>: <span class="code-string">'bun.lockb'</span>, <span class="code-property">manager</span>: <span class="code-string">'bun'</span> }
+  ];
+
+  <span class="code-keyword">for</span> (<span class="code-keyword">const</span> { file, manager } <span class="code-keyword">of</span> lockFiles) {
+    <span class="code-keyword">if</span> (<span class="code-function">existsSync</span>(<span class="code-function">join</span>(cwd, file))) {
+      <span class="code-keyword">return</span> manager;
+    }
+  }
+  <span class="code-keyword">return</span> <span class="code-string">'npm'</span>; <span class="code-comment">// default fallback</span>
+}</code></pre>
+        </div>
+        <div class="translation-english">
+          <span class="translation-label">PLAIN ENGLISH</span>
+          <div class="translation-lines">
+            <p class="tl">This function figures out which package manager your project uses by looking for <span class="term" data-definition="A lock file is a file generated by package managers that records exactly which versions of dependencies are installed. It ensures everyone on the team has the same setup.">lock files</span> in your project directory...</p>
+            <p class="tl">Check each known lock file type in order — if pnpm-lock.yaml exists, you're using pnpm...</p>
+            <p class="tl">If yarn.lock exists, you're using yarn...</p>
+            <p class="tl">If package-lock.json exists, you're using npm...</p>
+            <p class="tl">If bun.lockb exists, you're using bun...</p>
+            <p class="tl">Return the first match found. If no lock file exists, default to npm (the most common)...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout callout-info animate-in">
+        <div class="callout-icon">💡</div>
+        <div class="callout-content">
+          <strong class="callout-title">Why lock files matter</strong>
+          <p>Lock files record the exact version of every dependency. They ensure your teammate's computer, the production server, and your CI environment all run the same code — no "works on my machine" problems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 4: Security Scanning -->
+    <section class="screen animate-in">
+      <h2 class="screen-heading">Built-In Security Protection</h2>
+
+      <p class="text-lg">
+        ECC integrates with
+        <span class="term" data-definition="AgentShield is a security scanning system that automatically checks code for vulnerabilities like exposed secrets, SQL injection risks, and other security issues before code gets deployed.">AgentShield</span>
+        for automated security scanning — catching issues before they become problems.
+      </p>
+
+      <div class="pattern-cards animate-in">
+        <div class="pattern-card" style="border-top: 3px solid var(--color-actor-1);">
+          <div class="pattern-icon" style="background: var(--color-actor-1);">🔑</div>
+          <h4 class="pattern-title">Secret Detection</h4>
+          <p class="pattern-desc">Finds hardcoded API keys, passwords, and tokens that should never be in your code. Like having a security guard that catches you leaving your house key under the doormat.</p>
+        </div>
+        <div class="pattern-card" style="border-top: 3px solid var(--color-actor-2);">
+          <div class="pattern-icon" style="background: var(--color-actor-2);">💉</div>
+          <h4 class="pattern-title">SQL Injection Prevention</h4>
+          <p class="pattern-desc">Validates database queries to block attackers from manipulating your database through input fields. The #1 most common web vulnerability.</p>
+        </div>
+        <div class="pattern-card" style="border-top: 3px solid var(--color-actor-3);">
+          <div class="pattern-icon" style="background: var(--color-actor-3);">🛡️</div>
+          <h4 class="pattern-title">XSS Protection</h4>
+          <p class="pattern-desc">Sanitizes HTML output to prevent attackers from injecting malicious scripts into your pages. Protects your users from code that steals their data.</p>
+        </div>
+        <div class="pattern-card" style="border-top: 3px solid var(--color-actor-4);">
+          <div class="pattern-icon" style="background: var(--color-actor-4);">🔐</div>
+          <h4 class="pattern-title">CSRF Protection</h4>
+          <p class="pattern-desc">Validates cross-site requests to ensure actions come from your actual users, not malicious websites pretending to be them.</p>
+        </div>
+      </div>
+
+      <div class="callout callout-accent animate-in">
+        <div class="callout-icon">✅</div>
+        <div class="callout-content">
+          <strong class="callout-title">Tested at scale</strong>
+          <p>ECC has <strong>997 internal tests</strong> — including security scans that run before every commit. When AI generates code, it's not just hoping it works — it's proven.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screen 5: Quiz -->
+    <section class="screen animate-in">
+      <h2 class="screen-heading">Knowledge Check</h2>
+
+      <div class="quiz-container" id="quiz-module4">
+        <div class="quiz-question-block"
+             data-correct="option-b"
+             data-explanation-right="Exactly! ECC needs MCP configurations to talk to external services. Once configured in mcp-configs/, ECC agents can use those services automatically through conversation."
+             data-explanation-wrong="Not quite. MCP is what connects ECC to external services — it's not optional for databases and GitHub. Configuration is required.">
+          <div class="scenario-block">
+            <div class="scenario-context">
+              <span class="scenario-label">Scenario</span>
+              <p>You're working on a project that uses PostgreSQL for data storage and GitHub Issues for bug tracking. You want ECC to help you query the database and create issues. What do you need?</p>
+            </div>
+          </div>
+
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="option-a" onclick="selectOption(this)">
+              <div class="quiz-option-radio"></div>
+              <span>Just install ECC — it handles everything automatically</span>
+            </button>
+            <button class="quiz-option" data-value="option-b" onclick="selectOption(this)">
+              <div class="quiz-option-radio"></div>
+              <span>Configure PostgreSQL MCP and GitHub MCP in mcp-configs/</span>
+            </button>
+            <button class="quiz-option" data-value="option-c" onclick="selectOption(this)">
+              <div class="quiz-option-radio"></div>
+              <span>Write custom code to connect to PostgreSQL and GitHub</span>
+            </button>
+            <button class="quiz-option" data-value="option-d" onclick="selectOption(this)">
+              <div class="quiz-option-radio"></div>
+              <span>Use only the built-in commands — no MCP needed</span>
+            </button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <button class="quiz-check-btn" onclick="checkQuiz('quiz-module4')">Check Answer</button>
+        <button class="quiz-reset-btn" onclick="resetQuiz('quiz-module4')">Try Again</button>
+      </div>
+
+      <div class="next-module-link animate-in">
+        <p>Next up: <strong>Clever Tricks</strong> — optimization techniques that make ECC faster and more efficient.</p>
+      </div>
+    </section>
+  </div>
+</section>
