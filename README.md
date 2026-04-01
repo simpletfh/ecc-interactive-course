@@ -2,8 +2,15 @@
 
 > 一门将复杂 AI coding 工具系统化的交互式教程
 
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Online-brightgreen)](https://simpletfh.github.io/ecc-interactive-course/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Generated with](https://img.shields.io/badge/Generated%20With-codebase--to--course-brightgreen)](https://github.com/zarazhangrui/codebase-to-course)
+
+## 🚀 在线体验
+
+**GitHub Pages 地址:** https://simpletfh.github.io/ecc-interactive-course/
+
+点击链接即可直接在浏览器中体验交互式课程，无需下载！
 
 ## 📚 关于这个课程
 
